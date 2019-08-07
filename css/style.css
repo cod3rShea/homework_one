@@ -1,0 +1,210 @@
+/**
+ First External CSS Stylesheet
+ **/
+/*
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #efeee7;
+    position: relative;
+  }
+  header {
+    background: #5c8007;
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
+    border-bottom: solid black 3px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #eee;
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  a {
+    color: #5c8007;
+    text-decoration: none;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  .container {
+    max-width: 1920px;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+    margin-top: 90px;
+    z-index: 18;
+  }
+
+  #main-bio,
+  #contact-info,
+  #bio-image {
+    float: left;
+  }
+  #main-bio {
+    width: 70%;
+  }
+
+  #bio-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+img {
+      text-align:center;
+  }
+
+  section {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .about-me-container {
+    margin-left: 25px;
+}
+
+.contact-link,
+.social-media  {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+.social-media {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media li:nth-child(even){
+  margin:0 10px;
+}
+
+ul.social-media .fab {
+  font-size: 25px;
+}
+
+ul.social-media .fab:hover {
+  color: #fff;
+  background-color:#5c8007;
+}
+
+
+/* Skills */
+
+.skill-set-container {
+  display: flex;
+  height: 250px;
+}
+.skill-container {
+  display: flex;
+  height: 100%;
+  width: 95px;
+}
+
+.skill-container p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-right: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.html {
+  height: 90%; 
+  animation: html 2s ease-out;
+  background-color: #4CAF50;
+}
+
+.css {
+  height: 80%;
+  animation: css 2s ease-out;
+  background-color: #2196F3;
+}
+
+.js {
+  height: 65%;
+  animation: js 2s ease-out; 
+  background-color: #f44336;
+}
+
+.php {
+  height: 60%;
+  animation: php 2s ease-out;
+  background-color: #808080;
+}
+
+@keyframes html { 
+  0%  { 
+      height: 0px;
+  } 
+  100%  { 
+    height: 90%;
+  }  
+}
+
+@keyframes css { 
+  0%  { 
+      height: 0px;
+  } 
+  100%  { 
+    height: 80%;
+  }  
+}
+
+@keyframes js { 
+  0%  { 
+      height: 0px;
+  } 
+  100%  { 
+    height: 65%;
+  }  
+}
+
+@keyframes php { 
+  0%  { 
+      height: 0px;
+  } 
+  100%  { 
+    height: 60%;
+  }  
+}
+
+footer {
+    background-color: #bfbdbd;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
