@@ -1,4 +1,7 @@
 /* base */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 h1 {
   font-size: 50px;
@@ -37,6 +40,7 @@ a:hover,
 }
 .interior nav a {
   color: #000;
+  font-weight: 500;
 }
 
 /* grid */
@@ -175,6 +179,10 @@ nav ul li:nth-child(even) {
   justify-content: space-between;
 }
 
+/* portfolio */
+.porfolio-container li {
+  height: 300px;
+}
 
 /* contact */
 .contact-form {
