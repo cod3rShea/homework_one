@@ -14,12 +14,19 @@ img {
   width: 100%;
 }
 
+label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 a:hover,
 .primary-nav a:hover {
   color: #71B43E;
 }
 
-.contact .contact-nav {
+.contact .contact-nav,
+.about .about-nav,
+.portfolio .portfolio-nav  {
   text-decoration: underline;
   text-decoration-color: #71B43E;
 }
@@ -49,6 +56,9 @@ a:hover,
 .col-4 {
   width: 40%;
   width: calc(40% - 30px);
+}
+.col-5 {
+  width: 50%;
 }
 
 .col-6 {
@@ -163,6 +173,29 @@ nav ul li:nth-child(even) {
 
 .about .grid {
   justify-content: space-between;
+}
+
+
+/* contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-button {
+  padding: 10px;
+  max-width: 120px;
+  background-color: unset;
+  border: #71B43E 2px solid;
+  font-size: 16px;
+  margin-top: 20px;
+  transition-duration: 1s;
+}
+
+.contact-button:hover {
+  background-color: #71B43E;
+  color: #fff;
+  transition-duration: 1s;
 }
 
 /* footer */
