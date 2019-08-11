@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
+
+</head>
+
+<body class="interior contact">
+	<header>
+		<div class="logo-container">
+			<a href="index.html">
+				<img src="img/Logo_Interior.png" alt="Logo for Sean Shea">
+			</a>
+		</div>
+		<nav class="primary-nav">
+			<script>
+				$(function(){ 
+					$("nav").load("template_parts/nav.html") 
+				});
+			</script>
+		</nav>
+		<div class="interior-banner">
+
+		</div>
+	</header>
+	<div class="container">
+		<form action="action_page.php">
+		
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		
+			<input type="submit" value="Submit">
+		</form>
+		
+	</div>
+	<footer>
+		<h2>
+			Sean.Shea
+		</h2>
+		<h2>
+			Develeopment
+		</h2>
+	</footer>
+</body>
+
+</html>
