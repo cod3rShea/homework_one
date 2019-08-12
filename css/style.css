@@ -147,13 +147,80 @@ nav ul li:nth-child(even) {
 }
 
 .skill-set ul li {
-  height: 145px;
+  height: 337px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(33.33% - 30px);
-  border: 1px solid #000;
+  border: 1px solid #fafafa;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
+@media screen and (max-width: 768px) {
+  .skill-set ul li {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-set ul li {
+      width: 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.html .overlay {
+  background-color: #e44d26;
+}
+
+.css .overlay {
+  background-color: #0277bd;
+}
+
+.javascript .overlay {
+  background-color: #d6ba32;
+}
+
+.jquery .overlay {
+  background-color: #0769AD;
+}
+
+.php .overlay {
+  background-color: #787CB5;
+}
+
+.wordpress .overlay {
+  background-color: #00749C;
+}
+
+.skill-set ul li:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .skill-set ul li:nth-child(n+4) {
   margin-top: 20px;
