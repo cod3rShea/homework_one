@@ -11,6 +11,7 @@ h1 {
 p {
   font-size: 18px;
   margin-bottom: 10px;
+  line-height: 22px;
 }
 
 img {
@@ -44,6 +45,12 @@ a:hover,
 }
 
 /* grid */
+@media screen and (max-width: 1220px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +79,15 @@ a:hover,
 
 .col-10 {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-1-3, 
+  .col-4,
+  .col-5,
+  .col-6 {
+    width: 100%;
+  }
 }
 
 /* Nav */
@@ -132,6 +148,16 @@ nav ul li:nth-child(even) {
 
 .test a:nth-child(even) {
   margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .test {
+    flex-wrap: wrap;
+  }
+
+  .test a:nth-child(even) {
+    margin: 20px 0;
+  }
 }
 
 /* skills */
@@ -247,8 +273,13 @@ nav ul li:nth-child(even) {
 }
 
 /* portfolio */
-.porfolio-container li {
-  height: 300px;
+.porfolio-container .col-1-3 {
+  text-align: center;
+}
+
+
+.porfolio-container .col-1-3 img {
+  max-width: 337px;
 }
 
 /* contact */
